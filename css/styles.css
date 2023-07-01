@@ -1,0 +1,70 @@
+/*ROOT*/
+
+:root {
+    --black: rgba(57, 61, 63, 1);
+    --yellow: rgba(254, 228, 64, 1);
+    --blue: rgba(0, 187, 249, 1);
+    --pink: rgba(255, 123, 156, 1);
+    --off-white: rgba(255, 251, 255, 1);
+    --white: rgba(255, 255, 255, 1);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, 'Roboto', sans-serif;
+    color: var(--black);
+}
+
+html {
+    height: 100dvh;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1,
+h2 {
+    padding: 5px;
+    margin: 10px;
+}
+
+.page-title {
+    margin: 30px 0;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    background: linear-gradient(transparent, var(--white)) padding-box,
+        linear-gradient(to right, var(--blue), var(--yellow)) border-box;
+    border: 3px solid transparent;
+    border-radius: 0.4em;
+}
+
+.home-text {
+    border: 3px solid transparent;
+    border-radius: 0.4em;
+    margin: 10px 20px;
+    background: linear-gradient(transparent, var(--white)) padding-box,
+        linear-gradient(to right, var(--blue), var(--yellow)) border-box;
+        text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.home-subtext {
+    text-align: center;
+    padding: 5px;
+    margin: 10px 40px;
+    font-family: Tahoma, Roboto, san-serif;
+    border: 2px solid transparent;
+    border-radius: 0.4em;
+    background: linear-gradient(var(--off-white), transparent) padding-box,
+        linear-gradient(to right, var(--blue), var(--yellow)) border-box;
+}
