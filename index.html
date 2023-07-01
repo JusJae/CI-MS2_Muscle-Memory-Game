@@ -34,62 +34,108 @@
             <h2 class="home-text">Lets see how good your muscle memory really is?</h2>
             <p class="home-subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas tempora, provident voluptatem voluptatibus quos vel iure aspernatur ipsum illum. </p>
         </header>
+
         <nav class="nav-cards">
             <div class="container nav-card">
                 <div class="home-card-front">
                     <div class="content">
-                        <i class="fas fa-list-ol"></i>
-                        <h3>Rules</h3>
+                        <i class="fas fa-info-circle"></i>
+                        <h3>How to Play</h3>
                     </div>
                 </div>
                 <div class="home-card-back">
                     <div class="content">
                         <p>
-                            Matching Memory Game.
+                            Learn how to play the game and the rules.
                         </p>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rules-modal">RULES</button>
+                        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#rules-modal">RULES</button>
                     </div>
                 </div>
             </div>
-                            <!-- The Modal -->
-                            <div class="modal" id="rules-modal">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                            
-                                        <!-- Modal Header -->
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">How to play</h4>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                        </div>
-                            
-                                        <!-- Modal body -->
-                                        <div class="modal-body">
-                                            <ol>
-                                                <li>Click</li>
-                                                <li>A</li>
-                                                <li>Card</li>
-                                                <li>Find A</li>
-                                                <li>Match</li>
-                                            </ol>
-                                        </div>
-                            
-                                        <!-- Modal footer -->
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                                        </div>
-                            
-                                    </div>
-                                </div>
+                <!-- The Modal -->
+                <div class="modal" id="rules-modal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">How to play</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
+                
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <ol>
+                                    <li>Click</li>
+                                    <li>A</li>
+                                    <li>Card</li>
+                                    <li>Find A</li>
+                                    <li>Match</li>
+                                </ol>
+                            </div>
+                
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Modal -->
+
             <div class="container nav-card">
                 <div class="home-card">
-                    <h3>Play Game</h3>
+                    <div class="home-card-front">
+                        <div class="content">
+                            <i class="fas fa-play"></i>
+                            <h3>Game</h3>
+                        </div>
+                    </div>
+                    <div class="home-card-back">
+                        <div class="content">
+                            <p>
+                                Play the game and test your memory.
+                            </p>
+                            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#levels-modal">PLAY</button>
+                        </div>
+                    </div>
                 </div>
             </div>
+                <!-- Levels Modal -->
+                <div class="modal" id="levels-modal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="levels-title">Game Difficulty</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                
+                            <!-- Todo: Add links to the different game levels js functions -->
+                
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <a href="#" class="btn btn-info" id="easy">Easy</a>
+                                <a href="#" class="btn btn-info" id="medium">Medium</a>
+                                <a href="#" class="btn btn-info" id="hard">Hard</a>
+                            </div>
+                
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+
             <div class="container nav-card">
                 <div class="home-card">
                     <h3>High Scores</h3>
                 </div>
+                
             </div>
         </nav>
 
