@@ -43,6 +43,14 @@ h1 {
     color: var(--black);
 }
 
+h1 a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+h1 a:hover, h1 a:focus {
+    color: var(--pink);
+}
 .page-title {
     margin: 30px 0;
     padding: 20px 0 20px 0;
@@ -168,6 +176,19 @@ h1 {
 .game {
     min-height: 100vh;
     margin: 10px 20px;
+}
+
+#game-title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--black);
+    margin: 10px 20px;
+    padding: 20px 0 20px 0;
+    background: linear-gradient(transparent, var(--white)) padding-box,
+        linear-gradient(to right, var(--blue), var(--yellow)) border-box;
+    border: 3px solid transparent;
+    border-radius: 0.4em;
 }
 
 .game-info-container {
