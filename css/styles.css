@@ -349,7 +349,7 @@ footer h6 {
     transform: rotateY(0deg);
 }
 
-.card:hover .card-value {
+.card.matched .card-value {
     animation-name: dance;
     -webkit-animation-name: dance;
     animation: dance 1s linear infinite 500ms;
