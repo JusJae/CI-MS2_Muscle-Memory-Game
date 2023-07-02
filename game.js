@@ -11,6 +11,24 @@ class AudioController {
     startMusic() {
         this.bgMusic.play();
     }
+    stopMusic() {
+        this.bgMusic.pause();
+        this.bgMusic.currentTime = 1;
+    }
+    flip() {
+        this.flipSound.play();
+    }
+    match() {
+        this.matchSound.play();
+    }
+    success() {
+        this.stopMusic();
+        this.successSound.play();
+    }
+    gameOver() {
+        this.stopMusic();
+        this.gameOverSound.play();
+    }
 }
 
 function ready() {
@@ -21,8 +39,7 @@ function ready() {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
             //game.startGame();
-            let audioController = new AudioController();
-            audioController.startMusic();
+
         });
     });
     cards.forEach(card => {
