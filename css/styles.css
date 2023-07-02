@@ -265,8 +265,33 @@ footer h6 {
         justify-content: center;
         align-items: center;
         z-index: 100;
-        color: #fafafa;
-        font-family: Tahoma, san-serif;
+        color: var(--white);
+        font-size: 8em;
+}
+
+.overlay-text-small {
+    font-size: 30%;
+}
+
+.overlay-text.visible {
+    display: flex;
+    flex-direction: column;
+    -webkit-animation-name: overlay-grow;
+    animation-name: overlay-grow;
+    -webkit-animation: overlay-grow 500ms forwards;
+    animation: overlay-grow 500ms forwards;
+}
+
+@keyframes overlay-grow {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 0;
+    }
+
+    to {
+        background-color: rgba(0, 0, 0, 0.8);
+        font-size: 8em;
+    }
 }
 
 #game-title {
@@ -312,11 +337,11 @@ footer h6 {
 
 .card {
     position: relative;
-    cursor: url("assets/images/hand-icon.png"), auto;
     height: 175px;
     width: 125px;
     border: 1px solid transparent !important;
     border-radius: 0.4em;
+    
 }
 
 .card:hover {
