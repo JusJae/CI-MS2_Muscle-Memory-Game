@@ -341,12 +341,51 @@ footer h6 {
     transition: transform 500ms ease-in-out;
 }
 
-.card:hover .card-back {
+.card.visible .card-back {
     transform: rotateY(-180deg);
 }
 
-.card:hover .card-front {
+.card.visible .card-front {
     transform: rotateY(0deg);
+}
+
+.card:hover .card-value {
+    animation-name: dance;
+    -webkit-animation-name: dance;
+    animation: dance 1s linear infinite 500ms;
+    -webkit-animation: dance 1s linear infinite 500ms;
+}
+
+@keyframes dance {
+
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(-30deg);
+    }
+
+    75% {
+        transform: rotate(30deg);
+    }
+}
+
+@-webkit-keyframes dance {
+
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(-30deg);
+    }
+
+    75% {
+        transform: rotate(30deg);
+    }
 }
 
 .card-back {
