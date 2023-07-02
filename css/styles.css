@@ -248,6 +248,7 @@ footer h6 {
 }
 
 /* GAME */
+
 .game {
     min-height: 100vh;
     margin: 10px 20px;
@@ -299,6 +300,7 @@ footer h6 {
     cursor: url("assets/images/hand-icon.png"), auto;
     height: 175px;
     width: 125px;
+    border-radius: 0.4em;
 }
 
 .card:hover {
@@ -316,27 +318,22 @@ footer h6 {
     overflow: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border-radius: 0.4em;
+    border-radius: 0.2em;
     border-width: 3px;
     border-style: solid;
     border-color: transparent;
     transition: transform 500ms ease-in-out;
 }
 
+
 .card-back {
     background-color: var(--off-white);
-    /* border-radius: 0.4em;
-    border-width: 3px;
-    border-style: solid; */
     border-color: var(--darkblue);
 }
 
 .card-front {
     background-color: var(--black);
     transform: rotateY(180deg);
-    /* border-radius: 0.4em;
-    border-width: 3px;
-    border-style: solid; */
     border-color: var(--blue);
 }
 
