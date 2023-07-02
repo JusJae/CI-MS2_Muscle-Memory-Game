@@ -253,6 +253,21 @@ footer h6 {
     min-height: 100vh;
     margin: 10px 20px;
 }
+    
+.overlay-text {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        color: #fafafa;
+        font-family: Tahoma, san-serif;
+}
 
 #game-title {
     text-align: center;
