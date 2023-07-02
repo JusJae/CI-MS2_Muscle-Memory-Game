@@ -14,4 +14,9 @@ function ready() {
             //game.startGame();
         });
     });
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            //game.flipCard(card);
+        });
+    });
 }
