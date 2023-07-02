@@ -1,8 +1,4 @@
-if(document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", ready());
-} else {
-    ready();
-}
+
 
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
@@ -19,4 +15,10 @@ function ready() {
             //game.flipCard(card);
         });
     });
+}
+
+if(document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", ready());
+} else {
+    ready();
 }
