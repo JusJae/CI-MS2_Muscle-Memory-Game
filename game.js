@@ -1,4 +1,8 @@
+class AudioController {
+    constructor() {
 
+    }
+}
 
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
@@ -22,3 +26,5 @@ if(document.readyState === "loading") {
 } else {
     ready();
 }
+
+let audioController = new AudioController();
