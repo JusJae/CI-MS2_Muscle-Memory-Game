@@ -200,13 +200,18 @@ h1 {
 
 .card {
     position: relative;
+    cursor: url("assets/images/hand-icon.png"), auto;
     height: 175px;
     width: 125px;
-    border-radius: 0.5em;
+}
+
+.card:hover {
+    cursor: url("/assets/images/hand-icon.png"), auto;
 }
 
 .card-face {
     position: absolute;
+    display: flex;
     width: 100%;
     height: 100%;
     display: flex;
@@ -216,25 +221,27 @@ h1 {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: 0.4em;
-    border-width: 2px;
+    border-width: 3px;
     border-style: solid;
+    border-color: transparent;
     transition: transform 500ms ease-in-out;
 }
 
 .card-back {
     background-color: var(--off-white);
     border-radius: 0.4em;
-    border-width: 2px;
+    border-width: 3px;
     border-style: solid;
     border-color: var(--darkblue);
 }
 
 .card-front {
-    background-color: var(--off-white);
+    background-color: var(--black);
     transform: rotateY(180deg);
     border-radius: 0.4em;
-    border-width: 2px;
+    border-width: 3px;
     border-style: solid;
+    border-color: var(--blue);
 }
 
 .card-value {
