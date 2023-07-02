@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Tahoma, 'Roboto', sans-serif;
+    font-family: 'Oxygen', 'Bangers', Tahoma, sans-serif;
     color: var(--black);
 }
 
@@ -46,6 +46,7 @@ h1 {
 h1 a {
     text-decoration: none;
     color: var(--black);
+    font-family: Tahoma, sans-serif;
 }
 
 h1 a:hover, h1 a:focus {
@@ -266,11 +267,12 @@ footer h6 {
         align-items: center;
         z-index: 100;
         color: var(--white);
-        font-size: 8em;
+        font-family: 'Bangers', cursive;
 }
 
 .overlay-text-small {
-    font-size: 30%;
+    font-size: 0.3em;
+    color: var(--off-white);
 }
 
 .overlay-text.visible {
