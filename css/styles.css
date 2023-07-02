@@ -51,6 +51,7 @@ h1 a {
 h1 a:hover, h1 a:focus {
     color: var(--pink);
 }
+
 .page-title {
     margin: 30px 0;
     padding: 20px 0 20px 0;
@@ -172,6 +173,80 @@ h1 a:hover, h1 a:focus {
     transform: rotateY(-180deg);
 }
 
+.modal {
+    margin-top: 50px;
+}
+
+.modal-header {
+    background-color: var(--pink);
+}
+
+.modal-title {
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+.modal-content {
+    background-color: white;
+}
+
+#levels-modal {
+    text-align: center;
+}
+.modal-footer button {
+    background-color: var(--pink);
+}
+
+#easy {
+    background-color: green;
+}
+
+#medium {
+    background-color: gold;
+}
+
+#hard {
+    background-color: red;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    background-color: var(--off-white);
+}
+
+footer h6 {
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin: 0;
+}
+
+/* BUTTONS */
+
+.btn-outline-light {
+    color: var(--white);
+    border-color: var(--pink);
+}
+
+.btn-outline-light:hover {
+    border-color: var(--blue);
+}
+
+.btn > .fab {
+    color: var(--pink);
+    font-size: 1.5em;
+    justify-self: center;
+    width: 35px;
+}
+
+.btn:hover .fab {
+    color: var(--darkblue);
+}
+
 /* GAME */
 .game {
     min-height: 100vh;
@@ -250,18 +325,18 @@ h1 a:hover, h1 a:focus {
 
 .card-back {
     background-color: var(--off-white);
-    border-radius: 0.4em;
+    /* border-radius: 0.4em;
     border-width: 3px;
-    border-style: solid;
+    border-style: solid; */
     border-color: var(--darkblue);
 }
 
 .card-front {
     background-color: var(--black);
     transform: rotateY(180deg);
-    border-radius: 0.4em;
+    /* border-radius: 0.4em;
     border-width: 3px;
-    border-style: solid;
+    border-style: solid; */
     border-color: var(--blue);
 }
 
