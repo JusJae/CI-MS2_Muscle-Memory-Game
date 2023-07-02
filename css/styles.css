@@ -315,6 +315,7 @@ footer h6 {
     cursor: url("assets/images/hand-icon.png"), auto;
     height: 175px;
     width: 125px;
+    border: 1px solid transparent !important;
     border-radius: 0.4em;
 }
 
@@ -333,13 +334,20 @@ footer h6 {
     overflow: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border-radius: 0.2em;
+    border-radius: 0.4em;
     border-width: 3px;
     border-style: solid;
     border-color: transparent;
     transition: transform 500ms ease-in-out;
 }
 
+.card:hover .card-back {
+    transform: rotateY(-180deg);
+}
+
+.card:hover .card-front {
+    transform: rotateY(0deg);
+}
 
 .card-back {
     background-color: var(--off-white);
