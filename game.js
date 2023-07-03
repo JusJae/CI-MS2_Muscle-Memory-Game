@@ -42,6 +42,54 @@ class MuscleMemory {
         this.audioController = new AudioController();
     }
     
+    startGame() {
+
+    }
+
+    startCountDown() {
+
+    }
+
+    gameOver() {
+
+    }
+
+    success() {
+
+    }
+
+    hideCards(){
+        
+    }
+
+    flipCard() {
+        
+    }
+
+    checkForCardMatch() {
+        
+    }
+
+    cardMatch() {
+        
+    }
+
+    cardMismatch() {
+        
+    }
+    
+//Help from Port EXE for shuffle function derived from Fisher-Yates Algorithm
+    shuffleCards() {
+
+    }
+
+	getCardType() {
+        
+    }
+
+    canFlipCard() {
+            
+    }
 }
 
 
