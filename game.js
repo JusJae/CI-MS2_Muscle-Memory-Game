@@ -69,7 +69,9 @@ class MuscleMemory {
     }
 
     success() {
-
+        clearInterval(this.countDown);
+        this.audioController.success();
+        document.getElementById('success-text').classList.add('visible');
     }
 
     hideCards(){
