@@ -110,6 +110,14 @@ class MuscleMemory {
         this.audioController.match();
     }
 
+    cardMismatch(card1, card2) {
+        this.busy = true;
+        setTimeout(() => {
+            card1.classList.remove('visible');
+            card2.classList.remove('visible');
+            this.busy = false;
+        }, 1000);
+    }
     
 //Help from Port EXE for shuffle function derived from Fisher-Yates Algorithm
     shuffleCards() {
