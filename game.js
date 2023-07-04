@@ -70,7 +70,9 @@ class MuscleMemory {
     }
 
     gameOver() {
-
+        clearInterval(this.countDown);
+        this.audioController.gameOver();
+        document.getElementById('game-over-text').classList.add('visible');
     }
 
     success() {
