@@ -113,8 +113,13 @@ class MuscleMemory {
     
 //Help from Port EXE for shuffle function derived from Fisher-Yates Algorithm
     shuffleCards() {
+            for (let i = this.cardsArray.length - 1; i > 0; i--) {
+                let randIndex = Math.floor(Math.random() * (i+1));
+                this.cardsArray[randIndex].style.order = i;
+                this.cardsArray[i].style.order = randIndex;
+            }
 
-    }
+        }
 
 	getCardType(card) {
         return card.getElementsByClassName('card-value')[0].src;
