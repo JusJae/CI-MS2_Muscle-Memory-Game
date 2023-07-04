@@ -35,226 +35,216 @@
     <!-- Page Title -->
     <title>Muscle Memory | Game</title>
 </head>
-<body>
+<body id="gameBody" class="d-flex flex-column min-vh-100">
     <header>
-    <h1 id="game-title" class="page-title"><a href="index.html">Muscle Memory</a></h1>
-    <div class="overlay-text visible">
-        Click to Start
-    </div>
-    <div id="game-over-text" class="overlay-text">
-        GAME OVER
-        <span class="overlay-text-small">Click to Restart</span>
-    </div>
-    <div id="success-text" class="overlay-text">
-        SUCCESS
-        <span class="overlay-text-small">Click to Restart</span>
-    </div>
+        <h1 id="game-title" class="page-title"><a href="index.html">Muscle Memory</a></h1>
+        <div class="overlay-text visible">
+            Click to Start
+        </div>
+        <div id="game-over-text" class="overlay-text">
+            GAME OVER
+            <span class="overlay-text-small">Click to Restart</span>
+        </div>
+        <div id="success-text" class="overlay-text">
+            SUCCESS
+            <span class="overlay-text-small">Click to Restart</span>
+        </div>
     </header>
-    
-<!--     Game -->
-    <div class="game">
+
+    <!--     Game -->
+    <div class="game-container">
         <div class="game-info-container">
             <div class="game-info">
-                Time: <span id="time">100</span><span id="time-unit">s</span>
+                Time: <span id="time-remaining">100</span><span id="time-unit">s</span>
             </div>
             <div class="game-info">
-                Moves: <span id="moves">0</span>
+                Flips: <span id="flips">0</span>
             </div>
             <div class="game-info">
-                Matches: <span id="matches">0</span>
+                    Matches: <span id="matches">0</span>
             </div>
         </div>
-        <div class="game-container">
-            <div class="card">
-                <div class="card-face card-back">
-                    <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
-                </div>
-                <div class="card-face card-front">
-                    <img src="assets/images/glutes.png" class="card-value" alt="Gluteus icon">
-                </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
             </div>
-            <div class="card">
-                <div class="card-face card-back">
-                    <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
-                </div>
-                <div class="card-face card-front">
-                    <img src="assets/images/glutes.png" class="card-value" alt="Gluteus icon">
-                </div>
+            <div class="card-front card-face">
+                <img src="assets/images/glutes.png" class="card-value" alt="Gluteus icon">
             </div>
-            <div class="card">
-                <div class="card-face card-back">
-                    <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
-                </div>
-                <div class="card-face card-front">
-                    <img src="assets/images/abs.png" class="card-value" alt="Abs icon">
-                </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
             </div>
-            <div class="card">
-                <div class="card-face card-back">
-                    <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
-                </div>
-                <div class="card-face card-front">
-                    <img src="assets/images/abs.png" class="card-value" alt="Abs icon">
-                </div>
+            <div class="card-front card-face">
+                <img src="assets/images/glutes.png" class="card-value" alt="Gluteus icon">
             </div>
-            <div class="card">
-                <div class="card-face card-back">
-                    <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
-                </div>
-                <div class="card-face card-front">
-                    <img src="assets/images/quadriceps.png" class="card-value" alt="Quadriceps icon">
-                </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
             </div>
-            <div class="card">
-                <div class="card-face card-back">
-                    <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
-                </div>
-                <div class="card-face card-front">
-                    <img src="assets/images/quadriceps.png" class="card-value" alt="Quadriceps icon">
-                </div>
+            <div class="card-front card-face">
+                <img src="assets/images/abs.png" class="card-value" alt="Abs icon">
             </div>
-            <div class="card">
-                <div class="card-face card-back">
-                    <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
-                </div>
-                <div class="card-face card-front">
-                    <img src="assets/images/deltoids.png" class="card-value" alt="Deltoids icon">
-                </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
             </div>
-            <div class="card">
-                <div class="card-face card-back">
-                    <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
-                </div>
-                <div class="card-face card-front">
-                    <img src="assets/images/deltoids.png" class="card-value" alt="Deltoids icon">
-                </div>
+            <div class="card-front card-face">
+                <img src="assets/images/abs.png" class="card-value" alt="Abs icon">
             </div>
-            <div class="card">
-                <div class="card-face card-back">
-                    <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
-                </div>
-                <div class="card-face card-front">
-                    <img src="assets/images/hamstrings.png" class="card-value" alt="Hamstrings icon">
-                </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
             </div>
-            <div class="card">
-                <div class="card-face card-back">
-                    <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
-                </div>
-                <div class="card-face card-front">
-                    <img src="assets/images/hamstrings.png" class="card-value" alt="Hamstrings icon">
-                </div>
+            <div class="card-front card-face">
+                <img src="assets/images/quadriceps.png" class="card-value" alt="Quadriceps icon">
             </div>
-            <div class="card">
-                <div class="card-face card-back">
-                    <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
-                </div>
-                <div class="card-face card-front">
-                    <img src="assets/images/lats.png" class="card-value" alt="Latissimus Dorsi icon">
-                </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
             </div>
-            <div class="card">
-                <div class="card-face card-back">
-                    <<img class="muscle"
-                    src="assets/images/muscle-card-icon.png"
-                    alt="Flexed bicep muscles icon">
-                </div>
-                <div class="card-face card-front">
-                    <img src="assets/images/lats.png" class="card-value" alt="Latissimus Dorsi icon">
-                </div>
+            <div class="card-front card-face">
+                <img src="assets/images/quadriceps.png" class="card-value" alt="Quadriceps icon">
             </div>
-            <div class="card">
-                <div class="card-face card-back">
-                    <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
-                </div>
-                <div class="card-face card-front">
-                    <img src="assets/images/pecs.png" class="card-value" alt="Pectoralis major icon">
-                </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
             </div>
-            <div class="card">
-                <div class="card-face card-back">
-                    <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
-                </div>
-                <div class="card-face card-front">
-                    <img src="assets/images/pecs.png" class="card-value" alt="Pectoralis major icon">
-                </div>
+            <div class="card-front card-face">
+                <img src="assets/images/deltoids.png" class="card-value" alt="Deltoids icon">
             </div>
-            <div class="card">
-                <div class="card-face card-back">
-                    <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
-                </div>
-                <div class="card-face card-front">
-                    <img src="assets/images/triceps.png" class="card-value" alt="Triceps icon">
-                </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
             </div>
-            <div class="card">
-                <div class="card-face card-back">
-                    <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
-                </div>
-                <div class="card-face card-front">
-                    <img src="assets/images/triceps.png" class="card-value" alt="Triceps icon">
+            <div class="card-front card-face">
+                <img src="assets/images/deltoids.png" class="card-value" alt="Deltoids icon">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
+            </div>
+            <div class="card-front card-face">
+                <img src="assets/images/hamstrings.png" class="card-value" alt="Hamstrings icon">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
+            </div>
+            <div class="card-front card-face">
+                <img src="assets/images/hamstrings.png" class="card-value" alt="Hamstrings icon">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
+            </div>
+            <div class="card-front card-face">
+                <img src="assets/images/lats.png" class="card-value" alt="Latissimus Dorsi icon">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
+            </div>
+            <div class="card-front card-face">
+                <img src="assets/images/lats.png" class="card-value" alt="Latissimus Dorsi icon">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
+            </div>
+            <div class="card-front card-face">
+                <img src="assets/images/pecs.png" class="card-value" alt="Pectoralis major icon">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
+            </div>
+            <div class="card-front card-face">
+                <img src="assets/images/pecs.png" class="card-value" alt="Pectoralis major icon">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
+            </div>
+            <div class="card-front card-face">
+                <img src="assets/images/triceps.png" class="card-value" alt="Triceps icon">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="muscle" src="assets/images/muscle-card-icon.png" alt="Flexed bicep muscles icon">
+            </div>
+            <div class="card-front card-face">
+                <img src="assets/images/triceps.png" class="card-value" alt="Triceps icon">
+            </div>
+        </div>
+    </div>
+    <div class="container row">
+        <a class="col btn btn-secondary" href="index.html">HOME</a>
+        <a class="col btn btn-primary" data-bs-toggle="modal" data-bs-target="#game-modal">RULES</a>
+        <a class="col btn btn-warning" href="scores.html">HIGH SCORES</a>
+
+        <!-- The Modal -->
+        <div class="modal" id="game-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">How to Play</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <ol>
+                            <li>Click</li>
+                            <li>A</li>
+                            <li>Card</li>
+                            <li>Find A</li>
+                            <li>Match</li>
+                        </ol>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
-    
-    <!--     Game Navigation -->
-    <nav class="game-nav container">
-        <div class="row">
-            <a class="col btn btn-secondary" href="index.html">HOME</a>
-            <a class="col btn btn-primary" data-bs-toggle="modal" data-bs-target="#game-modal">RULES</a>
-            <a class="col btn btn-warning" href="scores.html">HIGH SCORES</a>
-    
-            <!-- The Modal -->
-            <div class="modal" id="game-modal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-            
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                            <h4 class="modal-title">How to Play</h4>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
-            
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                            <ol>
-                                <li>Click</li>
-                                <li>A</li>
-                                <li>Card</li>
-                                <li>Find A</li>
-                                <li>Match</li>
-                            </ol>
-                        </div>
-            
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                        </div>
-            
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-            
-    <footer class="footer mt-auto py-3">
+    <footer class="game-footer mt-auto py-3">
         <div class="container text-center">
-    
+
             <!-- Facebook -->
             <a href="https://github.com/jusjae" target="_blank" class="btn btn-outline-light btn-floating m-1" role="button"
                 aria-label="Github"><i class="fab fa-github"></i></a>
-    
+            
             <!-- Twitter -->
-            <a href="https://twitter.com/jusjaep" target="_blank" class="btn btn-outline-light btn-floating m-1"
-                role="button" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-    
+            <a href="https://twitter.com/jusjaep" target="_blank" class="btn btn-outline-light btn-floating m-1" role="button"
+                aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            
             <!-- Instagram -->
-            <a href="https://www.linkedin.com/in/jjaephillips/" target="_blank"
-                class="btn btn-outline-light btn-floating m-1" role="button" aria-label="LinkedIn"><i
-                    class="fab fa-linkedin"></i></a>
-    
-            <h6 class="jus-jae">Made by Jus Jae © 2023</h6>
+            <a href="https://www.linkedin.com/in/jjaephillips/" target="_blank" class="btn btn-outline-light btn-floating m-1"
+                role="button" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+
+            <h6 class="copyright">Made by Jus Jae © 2023</h6>
         </div>
     </footer>
 </body>
