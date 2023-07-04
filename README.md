@@ -240,6 +240,8 @@ Thanks to the following people for your help and support in completing this site
 
 Slack Community
 Code Institute Staff
+Web Dev Simplified - Insipired the creation of Msucle Memory from Tutorial on Matching Card Game
+Port Exe - Javascript support on Matching Card Game.
 
 # ms2, #readme, #ci
 
