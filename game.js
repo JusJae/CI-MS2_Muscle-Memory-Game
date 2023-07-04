@@ -13,7 +13,7 @@ class AudioController {
     }
     stopMusic() {
         this.bgMusic.pause();
-        this.bgMusic.currentTime = 1;
+        this.bgMusic.currentTime = 0;
     }
     flip() {
         this.flipSound.play();
@@ -43,7 +43,21 @@ class MuscleMemory {
     }
     
     startGame() {
-
+        this.totalClicks = 0;
+        this.totalMatches = 0;
+        this.timeRemaining = this.totalTime;
+        this.cardToCheck = null;
+        this.matchedCards = [];
+        this.busy = true;
+        setTimeout(() => {
+            this.audioController.startMusic();
+            this.shuffleCards(this.cardsArray);
+            this.countDown = this.startCountDown();
+            this.busy = false;
+        }, 500);
+        this.hideCards();
+        this.timer.innerText = this.timeRemaining;
+        this.ticker.innerText = this.totalClicks;
     }
 
     startCountDown() {
@@ -59,23 +73,28 @@ class MuscleMemory {
     }
 
     hideCards(){
-        
     }
+    
+    flipCard(card) {
+        if(this.canFlipCard(card)) {
+            this.audioController.flip();
+            this.totalClicks++;
+            this.ticker.innerText = this.totalClicks;
+            card.classList.add('visible');
 
-    flipCard() {
-        
+            if(this.cardToCheck) {
+                this.checkForCardMatch(card);
+            } else {
+                this.cardToCheck = card;
+            }
+        }
     }
-
     checkForCardMatch() {
-        
+
     }
 
     cardMatch() {
-        
-    }
 
-    cardMismatch() {
-        
     }
     
 //Help from Port EXE for shuffle function derived from Fisher-Yates Algorithm
@@ -83,12 +102,12 @@ class MuscleMemory {
 
     }
 
-	getCardType() {
-        
+	getCardType(card) {
+        return card.getElementsByClassName('card-value')[0].src;
     }
 
-    canFlipCard() {
-            
+    canFlipCard(card) {
+        return !this.busy && !this.matchedCards.includes(card) && card !==  this.cardToCheck; 
     }
 }
 
@@ -96,17 +115,18 @@ class MuscleMemory {
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
+    let game = new MuscleMemory(100, cards);
     
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
             overlay.classList.remove('visible');
-            //game.startGame();
+            game.startGame();
 
         });
     });
     cards.forEach(card => {
         card.addEventListener('click', () => {
-            //game.flipCard(card);
+            game.flipCard(card);
         });
     });
 }
@@ -115,6 +135,4 @@ if(document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", ready());
 } else {
     ready();
-}
-
-let audioController = new AudioController();
+};
