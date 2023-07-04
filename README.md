@@ -2,7 +2,7 @@
 
 (Developer: Jae Phillips)
 
-![Responsive mockup image](docs/am-i-responsive.jpg)
+![Responsive Mockup Image](docs/responsive-img.png)
 
 > [Live Page](https://jusjae.github.io/CI-MS2_Muscle-Memory-Game/)
 
@@ -50,56 +50,58 @@ The colours also allow for s dark mode filter to easily changed the colours the 
 
 # Wireframes
 
-## Web View
-
-<details>
-<summary>View Web Home Page</summary>
-
-<img src="../docs/wireframes/wireframes-web_view.png">
-</details>
-
-<details>
-<summary>View Web About Us Page</summary>
-
-<img src="../docs/wireframes/wireframes-web_view.png">
-</details>
-
-<details>
-<summary>View Web Exercises Page</summary>
-
-<img src="../docs/wireframes/wireframes-web_view.png">
-</details>
-
-<details>
-<summary>View Web Contact Us Page</summary>
-
-<img src="../docs/wireframes/wireframes-web_view.png">
-</details>
-
-## Mobile view
+## Mobile View
 
 <details>
 <summary>View Mobile Home Page</summary>
 
-<img src="../docs/wireframes/wireframes-web_view.png">
+<img src="./docs/wireframes/mobile-home.png">
 </details>
 
 <details>
-<summary>View Mobile About Us Page</summary>
+<summary>View Mobile Game Page</summary>
 
-<img src="../docs/wireframes/wireframes-web_view.png">
+<img src="./docs/wireframes/mobile-game.png">
 </details>
 
 <details>
-<summary>View Mobile Exercises Page</summary>
+<summary>View Mobile Game - How to Play Page</summary>
 
-<img src="../docs/wireframes/wireframes-web_view.png">
+<img src="./docs/wireframes/mobile-rules.png">
 </details>
 
 <details>
-<summary>View Mobile Contact Us Page</summary>
+<summary>View Mobile Game Difficulty Page</summary>
 
-<img src="../docs/wireframes/wireframes-web_view.png">
+<img src="./docs/wireframes/wireframes-web_view.png">
+</details>
+
+<details>
+<summary>View Mobile High Scores Page</summary>
+
+<img src="./docs/wireframes/mobile-highscores.png">
+</details>
+
+## Tablet view
+
+<details>
+<summary>View Tablet Home Page</summary>
+
+<img src="./docs/wireframes/tablet-home.png">
+</details>
+
+<details>
+<summary>View Tablet Game Page</summary>
+
+<img src="./docs/wireframes/tablet-game.png">
+</details>
+
+## Web view
+
+<details>
+<summary>View Web Home Page</summary>
+
+<img src="./docs/wireframes/laptop-home.png">
 </details>
 
 # Features
