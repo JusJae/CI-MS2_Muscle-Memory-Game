@@ -61,7 +61,12 @@ class MuscleMemory {
     }
 
     startCountDown() {
-
+        return setInterval(() => {
+            this.timeRemaining--;
+            this.timer.innerText = this.timeRemaining;
+            if(this.timeRemaining === 0)
+                this.gameOver();
+        }, 1000);
     }
 
     gameOver() {
