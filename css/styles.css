@@ -57,6 +57,7 @@ h1 a:hover, h1 a:focus {
     margin: 30px 0;
     padding: 20px 0 20px 0;
     text-align: center;
+    text-transform: uppercase;
     font-size: 2em;
     font-weight: bold;
     background: linear-gradient(transparent, var(--white)) padding-box,
@@ -115,7 +116,7 @@ h1 a:hover, h1 a:focus {
     width: 100%;
     transition: 0.5s ease;
     border-radius: 0.4em;
-    border: 1.5px solid var(--darkblue);
+    border: 1.7px solid var(--darkblue);
 }
 
 .home-card-front,
@@ -191,23 +192,28 @@ h1 a:hover, h1 a:focus {
     background-color: white;
 }
 
-#levels-modal {
-    text-align: center;
+.modal-body ol{
+    color: var(--black);
+    line-height: 1.7em;
+    letter-spacing: 0.02em;
+    padding: 0 3em;
+
 }
+
 .modal-footer button {
     background-color: var(--pink);
 }
 
-#easy {
-    background-color: green;
-}
-
-#medium {
-    background-color: gold;
-}
-
-#hard {
-    background-color: red;
+.btn-info {
+    font-size: 1.25em !important;
+    letter-spacing: 2px;
+    border: 1px solid var(--darkblue)!important;
+    border-radius: 0.4em;
+    color: var(--off-white);
+    font-family: 'Bangers', sans-serif;
+    transition: all 0.3s ease-in-out;
+    margin: 10px 0 10px 0;
+    background-color: var(--pink)!important;
 }
 
 footer {
@@ -226,15 +232,11 @@ footer h6 {
     margin: 0;
 }
 
-/* BUTTONS */
+/* Footer */
 
-.btn-outline-light {
+.btn-outline-dark {
     color: var(--white);
-    border-color: var(--pink);
-}
-
-.btn-outline-light:hover {
-    border-color: var(--blue);
+    border-color: var(--blue)!important;
 }
 
 .btn > .fab {
@@ -245,7 +247,7 @@ footer h6 {
 }
 
 .btn:hover .fab {
-    color: var(--darkblue);
+    color: var(--blue);
 }
 
 /* GAME */
@@ -448,7 +450,104 @@ footer h6 {
     transform: scale(1);
 }
 
+#gameHomeBtn, #gameRulesBtn, #gameRestartBtn{
+    margin-right: 10px;
+    background-color: var(--pink) !important;
+        color: var(--off-white) !important;
+}
+
+#gameHomeBtn:hover {
+    background: linear-gradient(to right, var(--blue), var(--yellow));
+}
+
+#gameRulesBtn:hover{
+    background: linear-gradient(to left, var(--yellow), var(--pink), var(--yellow));
+    color: var(--black)!important;
+}
+
+#gameRestartBtn:hover{
+        background: linear-gradient(to left, var(--blue), var(--yellow));
+}
+/* High Scores */
+.coming-soon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coming-soon {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--black);
+    margin: 3em 1em;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(transparent, var(--white)) padding-box,
+        linear-gradient(to right, var(--blue), var(--yellow)) border-box;
+    border: 3px solid transparent;
+    border-radius: 0.4em;
+}
+
+.btn-scores {
+    display: flex;
+    font-size: 1.75em !important;
+    margin: 2em;
+    padding: 0.5em 1em !important;
+    letter-spacing: 2px;
+    border-radius: 0.4em;
+    text-decoration: none;
+    background-color: var(--blue)!important;
+}
+
+/* 404.html */
+.error-404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Bangers', sans-serif;
+    color: var(--off-white);
+    font-size: 1em;
+}
+
+#pageTitle404 {
+    font-size: 4em;
+    margin: 0 0 1em 0;
+    padding: 0.5em 2em;
+}
+.btn-404 {
+    font-size: 1.75em !important;
+    margin-top: 2em;
+    padding: 0.5em 1em !important;
+    letter-spacing: 2px;
+    background: linear-gradient(to left, var(--blue), var(--yellow));
+    border: 3px solid transparent;
+    border-radius: 0.4em;
+    color: var(--white);
+    font-family: 'Bangers', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
 /* ——— Media Queries —-*/
+@media screen and (min-width: 992px) {
+    .game-container {
+        grid-template-columns: repeat(4, auto);
+        gap: 30px;
+    }
+
+    .game-info-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .container {
+        flex-basis: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 1.5em;
+    }
+}
 
 @media (max-width: 600px) {
     .game-container {
@@ -459,4 +558,29 @@ footer h6 {
         flex-direction: column;
         align-items: center;
     }
+}
+
+@media (max-width: 400px) {
+    .page-title {
+        font-size: 4em;
+        margin: 40px 30px;
+    }
+
+    .home-text {
+        margin: 20px;
+    }
+
+    .home-subtext {
+        padding: 5px;
+        margin: 20px 40px;
+    }
+
+    .nav-cards {
+        padding: 1em 2em;
+    }
+
+    .home-card-front .fas {
+        font-size: 60px;
+    }
+
 }

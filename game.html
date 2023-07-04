@@ -193,43 +193,44 @@
             </div>
         </div>
     </div>
-    <div class="container row">
-        <a class="col btn btn-secondary" href="index.html">HOME</a>
-        <a class="col btn btn-primary" data-bs-toggle="modal" data-bs-target="#game-modal">RULES</a>
-        <a class="col btn btn-warning" href="scores.html">HIGH SCORES</a>
+    <div class="container">
+        <div class="row">
+            <a class="col btn btn-info" id="gameHomeBtn" href="index.html">HOME</a>
+            <a class="col btn btn-info" id="gameRulesBtn" data-bs-toggle="modal" data-bs-target="#game-modal">HOW TO PLAY</a>
+            <a class="col btn btn-info" id="gameRestartBtn" href="game.html">START AGAIN</a>
 
-        <!-- The Modal -->
-        <div class="modal" id="game-modal">
-            <div class="modal-dialog">
-                <div class="modal-content">
+            <!-- The Modal -->
+            <div class="modal" id="game-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
 
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title">How to Play</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">How to Play</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <ol>
+                                <li>Once the game has started the timer will start.</li>
+                                <li>You have 100 seconds to find all matches.</li>
+                                <li>Each Flip will be counted.</li>
+                                <li>Each match will be counted.</li>
+                                <li>Find all the muscles matches for success!</li>
+                                <li>*Coming Soon* Once the game has ended you will be able to see your score.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+
                     </div>
-
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <ol>
-                            <li>Once the game has started the timer will start.</li>
-                            <li>You have 100 seconds to find all matches.</li>
-                            <li>Each Flip will be counted.</li>
-                            <li>Each match will be counted.</li>
-                            <li>Find all the muscles matches for success!</li>
-                            <li>*Coming Soon* Once the game has ended you will be able to see your score.</li>
-                        </ol>
-                    </div>
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                    </div>
-
                 </div>
             </div>
         </div>
-    </div>
     <footer class="game-footer mt-auto py-3">
         <div class="container text-center">
 
