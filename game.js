@@ -89,13 +89,27 @@ class MuscleMemory {
             }
         }
     }
-    checkForCardMatch() {
+    checkForCardMatch(card) {
+            if(this.getCardType(card) === this.getCardType(this.cardToCheck)){
+                this.cardMatch(card, this.cardToCheck);
+                
+            } else
+                this.cardMismatch(card, this.cardToCheck);
 
+            this.cardToCheck = null;
+        }
+
+    cardMatch(card1, card2) {
+
+        this.matchedCards.push(card1);
+        this.matchedCards.push(card2);
+        card1.classList.add('matched');
+        card2.classList.add('matched');
+        this.totalMatches++;
+        this.matches.innerText = this.totalMatches;
+        this.audioController.match();
     }
 
-    cardMatch() {
-
-    }
     
 //Help from Port EXE for shuffle function derived from Fisher-Yates Algorithm
     shuffleCards() {
