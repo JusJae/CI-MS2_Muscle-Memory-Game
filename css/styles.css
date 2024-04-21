@@ -28,6 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 h1,
@@ -294,7 +295,7 @@ footer h6 {
     }
 
     to {
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.95);
         font-size: 8em;
     }
 }
@@ -350,7 +351,7 @@ footer h6 {
 }
 
 .card:hover {
-    cursor: url("/assets/images/hand-icon.png"), auto;
+    cursor: url("/assets/images/hand-icon.png"), auto !important;
 }
 
 .card-face {
@@ -449,6 +450,10 @@ footer h6 {
 
 .card-front:hover .card-value {
     transform: scale(1);
+}
+
+.card-mismatch {
+    border: 2px solid red !important;
 }
 
 #gameHomeBtn, #gameRulesBtn, #gameRestartBtn{
