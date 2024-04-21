@@ -438,7 +438,7 @@ footer h6 {
     position: absolute;
     width: 100px;
     height: 100px;
-    align-self: flex;
+    align-self: auto;
     transform: scale(.9);
     transition: transform 100ms ease-in-out;
 }
@@ -548,7 +548,7 @@ footer h6 {
     }
 
     .container {
-        flex-basis: 0 0 33.33%;
+        flex-basis: 33.33%;
         max-width: 33.33%;
         padding: 0 1.5em;
     }
